@@ -1,0 +1,26 @@
+{
+  "name": "bentools/sqldates",
+  "type": "library",
+  "description": "Magic __toString() functions on DateTime objects, for use in SQL statements.",
+  "keywords": ["sql", "dates", "datetime"],
+  "homepage": "https://github.com/bpolaszek/bentools-sqldates",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Beno!t POLASZEK",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/bpolaszek/bentools-sqldates"
+    }
+  ],
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "psr-4": {"BenTools\\": "src/BenTools"}
+  }
+}
