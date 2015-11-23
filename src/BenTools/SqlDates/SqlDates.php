@@ -157,7 +157,7 @@ abstract class SqlDates extends DateTime {
      * @inheritDoc
      * @return static
      */
-    public static function createFromFormat($format, $time, DateTimeZone $timezone = null) {
+    public static function createFromFormat($format, $time, $timezone = null) {
         if (!is_null($timezone) && $dateTime = parent::createFromFormat($format, $time, $timezone))
             return new static($dateTime->format(static::FORMAT), $dateTime->getTimezone());
         elseif (is_null($timezone) && $dateTime = parent::createFromFormat($format, $time))
